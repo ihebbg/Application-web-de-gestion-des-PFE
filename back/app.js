@@ -1,6 +1,5 @@
 const express = require('express')
 const cors = require('cors')
-// const port = 8000
 // require('./connexion')
 
 const route_etudiant = require('./routes/etudiant_routes')
@@ -20,12 +19,7 @@ function createserver() {
     app.use('/', route_anneeUniv)
     app.use('/', route_pfe)
 
-    // app.get('/', (req, res) => {
-    //     res.send('Hello World!');
-    // });
-    // app.listen(port, () => {
-    //     console.log(`Example app listening at http://localhost:${port}`)
-    // })
+ 
     return app
 }
 module.exports = createserver
